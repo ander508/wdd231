@@ -1,0 +1,50 @@
+@media (max-width: 720px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    
+    header span{
+        font-size: 35px;
+    }
+    header .menu{
+        display: contents;
+        font-size: 30px;
+        background-color: skyblue;
+        height: 50px;
+        width: 40px;
+        text-align: center;
+        line-height: 50px;
+        padding: 20px;
+    }
+    nav ul{
+        display: none;
+    }
+     .open{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main section h2{
+        font-size: 20px;
+    }
+    .some-course ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .some-course ul li{
+        width: 90%;
+        /* margin-left: 0.5%; */
+        height:35px ;
+        line-height: 35px;
+    }
+}
