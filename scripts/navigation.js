@@ -16,15 +16,23 @@ buttonElement.addEventListener('click', function(){
     // buttonElement.classList.add('color')
 })
 
-const navLinks = document.querySelectorAll('nav ul li a')
-const heading = document.querySelector('main h1')
-navLinks.forEach(function (link){
-    link.addEventListener('click', function (event){
-        event.preventDefault(); 
-        heading.textContent = link.textContent;
-        
-        // Remove 'active' class from all links
-        navLinks.forEach(link => link.classList.remove('active'));
-        link.classList.add('active');
-    })
-})
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const heading = document.querySelector('main h1');
+
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            link.classList.add('active');
+
+            if (heading) {
+                heading.textContent = link.textContent;
+            }
+
+            if (!link.getAttribute("href") || link.getAttribute("href") === "#") {
+                event.preventDefault(); 
+            }
+        });
+    });
+});
