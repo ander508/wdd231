@@ -1,0 +1,19 @@
+[
+  {"family-name": "offor",
+   "date": "12/03/25",
+   "family-number": 5,
+   "visited": true,
+   "first-member":[{
+       "nama": "oluchukwu",
+       "gender": "male",
+       "birthdate":"11/08/1981"
+        },
+                {
+                    "nama": "Amanda",
+                    "gender": "female",
+                    "birthdate":"06/12/2017"
+                }
+             ]
+    }
+    
+]
