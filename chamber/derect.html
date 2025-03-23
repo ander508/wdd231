@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chamber of Commerce Page | Oluchukwu Offor</title>
+        <meta name="description" content="Chamber of Commerce Page">
+        <meta name="author" content="Oluchukwu Offor">
+        <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
+        <meta property="og:title" content="Chamber of Commerce | Oluchukwu Offor">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://raw.githubusercontent.com/ander508/wdd231/main/chamber/images/commerce.webp">
+        <meta property="og:url" content="https://ander508.github.io/wdd231/chamber/directory.html">
+        <!-- <link rel="stylesheet" href="styles/small.css"> -->
+        <!-- <link rel="stylesheet" href="styles/large.css"> -->
+        <script src="scripts/scripts.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/toggle.js" defer></script>
+    </head>
+    <style>
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
+    .adjusted{
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+    }
+    .list{
+        margin-left: auto;
+    }
+    .list ul{
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        margin-right: 20px;
+    }
+    .hamburger{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .hamburger::before{
+        content: '\2630';
+    }
+    .hamburger.open::before{
+        content: 'x';
+    }
+    ul.list{
+        display:none ;
+    }
+   ul.list.open{
+        display: flex;
+        flex-direction: column;
+    }
+    </style>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo4.png" alt="">
+                <div>
+                    <h2>Timbuktu</h2>
+                    <h4>Chamber of Commerce</h4>
+                </div>
+            </div>
+            <div class="adjusted">
+                <ul class="list">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Directory</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+                <div>
+                    <img
+                        src="images/contrast.png"
+                        alt=""
+                        width="50"
+                        height="50"
+                    >
+                </div>
+                <button class="hamburger"></button>
+            </div>
+        </header>
+    </body>
+</html>

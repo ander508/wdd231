@@ -1,0 +1,74 @@
+{
+  "members": [
+    {
+      "name": "Acme Corp",
+      "address": "123 Mcc St, Calabar, Nigeria",
+      "phone": "(123) 456-7890",
+      "url": "https://acmecorp.com",
+      "imageurl": "../chamber/images/image.webp",
+      "membership_level": 1,
+      "email": "info@acmecorp.com",
+      "line": "Leading industrial suppliers"
+    },
+    {
+      "name": "Best Services LLC",
+      "address": "456 Mcc St, Metropolis, Nigeria",
+      "phone": "(987) 654-3210",
+      "url": "https://bestservices.com",
+      "imageurl": "../chamber/images/image.webp",
+      "membership_level": 2,
+      "email": "info@acmecorp.com",
+      "line": "Excellence in consulting services"
+    },
+    {
+      "name": "Clever Tech",
+      "address": "789 Mcc St, Calabar, Nigeria",
+      "phone": "(555) 123-4567",
+      "url": "https://clevertech.com",
+      "imageurl": "../chamber/images/image.webp",
+      "membership_level": 3,
+      "email": "info@acmecorp.com",
+      "line": "Innovating your digital world"
+    },
+    {
+      "name": "Dynamo Solutions",
+      "address": "101 Maple St, Springfield, USA",
+      "phone": "(444) 987-6543",
+      "url": "https://solutions.com",
+      "imageurl": "../chamber/images/image.webp",
+      "membership_level": 1,
+      "email": "infosolutions.com",
+      "line": "Powering your business"
+    },
+    {
+      "name": "Elite Brands",
+      "address": "202 Mcc St, Calabar, Nigeria",
+      "phone": "(333) 765-4321",
+      "url": "https://brands.com",
+      "imageurl": "../chamber/images/image.webp",
+      "membership_level": 2,
+      "email": "sales@brands.com",
+      "line": "Premium products, premium service"
+    },
+    {
+      "name": "Future Ventures",
+      "address": "303 Mcc St, Calabar Town, Nigeria",
+      "phone": "(222) 321-7654",
+      "url": "https://ventures.com",
+      "imageurl": "../chamber/images/image.webp",
+      "membership_level": 3,
+      "email": "partners@ventures.com",
+      "line": "Investing in tomorrow"
+    },
+    {
+      "name": "GreenTech Solutions",
+      "address": "404 Mcc St, Calabar, Nigeria",
+      "phone": "(111) 678-9012",
+      "url": "https://tech.com",
+      "imageurl": "../chamber/images/image.webp",
+      "membership_level": 1,
+      "email": "contact@tech.com",
+      "line": "Sustainability for a better future"
+    }
+  ]
+}

@@ -11,6 +11,173 @@
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://raw.githubusercontent.com/ander508/wdd231/main/chamber/images/commerce.webp">
         <meta property="og:url" content="https://ander508.github.io/wdd231/chamber/directory.html">
+        <link
+            rel="preload"
+            href="styles/small.css"
+            as="style"
+            onload="this.rel='stylesheet'"
+        >
+        <link
+            rel="preload"
+            href="styles/large.css"
+            as="style"
+            onload="this.rel='stylesheet'"
+        >
+        <script src="scripts/scripts.js" defer></script>
+        <script src="scripts/date.js" async></script>
+        <script src="scripts/toggle.js" defer></script>
+        <script src="scripts/navigation.js" async></script>
     </head>
-    <body></body>
+    <body>
+        <header>
+            <section>
+                <img
+                    src="images/logo4.png"
+                    alt="Site logo"
+                    width="80"
+                    height="80"
+                    loading="lazy"
+                >
+                <section>
+                    <h2>Timbuktu</h2>
+                    <h4>Chamber of Commerce</h4>
+                </section>
+            </section>
+            <nav>
+                <ul class="list">
+                    <li>
+                        <a href="#" title="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" title="directory">Directory</a>
+                    </li>
+                    <li>
+                        <a href="#" title="join">Join</a>
+                    </li>
+                    <li>
+                        <a href="#" title="discover">Discover</a>
+                    </li>
+                </ul>
+                <button class="button" aria-label="Toggle contrast mode">
+                    <img
+                        src="images/contrast.png"
+                        alt="contrast"
+                        width="50"
+                        height="50"
+                        loading="lazy"
+                    >
+                </button>
+                <button class="hamburger" aria-label="Toggle menu"></button>
+            </nav>
+        </header>
+        <main>
+            <div class="banner">
+                <!-- <p>banner</p> -->
+                <img
+                    src="images/chamber2.webp"
+                    alt="Chamber banner"
+                    loading="lazy"
+                    width="3500"
+                    height="400"
+                >
+                <a href="#">Keynote Ticket</a>
+            </div>
+            <h1>Home</h1>
+            <section class="part1">
+                <div class="events">
+                    <h2>Events</h2>
+                    <div class="event-space" aria-live="polite"></div>
+                </div>
+                <div class="weather">
+                    <h2>Current Weather</h2>
+                    <div class="weather-space">
+                        <img src="images/weather.png" alt="Weather icon" loading="lazy">
+                        <div class="weather-list">
+                            <p>75°C</p>
+                            <p>Partly Cloudy</p>
+                            <p>High: 85°C</p>
+                            <p>Low: 50°C</p>
+                            <p>Humidity: 34%</p>
+                            <p>Sunrise: 7:30am</p>
+                            <p>Sunset: 9:59pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <h2>Weather Forecast</h2>
+                    <div class="forecast-space">
+                        <p>
+                            <span>Today</span>
+                            : 90°F
+                        </p>
+                        <p>
+                            <span>Wednesday</span>
+                            : 89°F
+                        </p>
+                        <p>
+                            <span>Thursday</span>
+                            : 68°F
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="grid"></div>
+            <div class="list"></div>
+            <div class="members" aria-live="polite"></div>
+        </main>
+        <footer>
+            <div class="one">
+                <p>Timbuktu Chamber of Commerce</p>
+                <p>10 Rue De La Palx</p>
+                <p>Timbuktu, Mali 999</p>
+                <p>
+                    Email:
+                    <a href="mailto:info@timbuktucc.org">info@timbuktucc.org</a>
+                </p>
+                <p>
+                    Phone:
+                    <a href="tel:+2225552300">(222) 555-2300</a>
+                </p>
+            </div>
+            <div class="two">
+                <a href="#">
+                    <img
+                        src="images/youtube.png"
+                        alt="YouTube"
+                        loading="lazy"
+                        width="50"
+                        height="50"
+                    >
+                </a>
+                <a href="#">
+                    <img
+                        src="images/twitter.png"
+                        alt="Twitter"
+                        loading="lazy"
+                        width="50"
+                        height="50"
+                    >
+                </a>
+                <a href="#">
+                    <img
+                        src="images/linkedin.png"
+                        alt="LinkedIn"
+                        loading="lazy"
+                        width="50"
+                        height="50"
+                    >
+                </a>
+            </div>
+            <div class="three">
+                <p>WDD231 Class Project</p>
+                <p>Marie Martinez</p>
+                <p>
+                    &copy;
+                    <span id="currentYear"></span>
+                    Timbuktu Chamber of Commerce
+                </p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+    </body>
 </html>

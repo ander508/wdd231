@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Alpha Business",
+        "address": "123 Main St, Timbuktu, Mali",
+        "phone": "(223) 555-1234",
+        "website": "https://alpha-business.com"
+    },
+    {
+        "name": "Bravo Services",
+        "address": "456 Market Rd, Timbuktu, Mali",
+        "phone": "(223) 555-5678",
+        "website": "https://bravo-services.com"
+    },
+    {
+        "name": "Charlie Solutions",
+        "address": "789 Commerce Ave, Timbuktu, Mali",
+        "phone": "(223) 555-9101",
+        "website": "https://charlie-solutions.com"
+    },
+    {
+        "name": "Delta Innovations",
+        "address": "101 Tech Blvd, Timbuktu, Mali",
+        "phone": "(223) 555-1122",
+        "website": "https://delta-innovations.com"
+    },
+    {
+        "name": "Echo Enterprises",
+        "address": "202 Industry Ln, Timbuktu, Mali",
+        "phone": "(223) 555-3344",
+        "website": "https://echo-enterprises.com"
+    },
+    {
+        "name": "Foxtrot Corp",
+        "address": "303 Business Park, Timbuktu, Mali",
+        "phone": "(223) 555-5566",
+        "website": "https://foxtrot-corp.com"
+    },
+    {
+        "name": "Golf Group",
+        "address": "404 Trade St, Timbuktu, Mali",
+        "phone": "(223) 555-7788",
+        "website": "https://golf-group.com"
+    }
+]
