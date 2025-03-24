@@ -233,6 +233,18 @@ h1, .part1{
     margin-top: -40px;
     margin-left: -50px;
 }
+.display{
+    width: 100vw;
+    height: auto;
+    background-color: rgba(9, 174, 20, 0.218);
+    margin-bottom:30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+
+}
 
 footer {
     display: flex;

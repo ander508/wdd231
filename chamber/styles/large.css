@@ -105,11 +105,23 @@
         display: flex;
         gap: 20px;
     }
+    .members.open.view-grid{
+        width: 96vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        margin: auto;
+    }
     .members.open{
         display: flex;
         flex-direction: column;
         
         
+    }
+    .grid-view, .list-view{
+        cursor: pointer;
     }
     .members.open .list{
         width: 90%;
