@@ -3,7 +3,8 @@ const tempDesc = document.querySelector('.temp-desc');
 const temp = document.querySelector('.temp');
 const desc = document.querySelector('.desc');
 
-const apiId = '7688ab275a3f26de661a3491c41fec9b';
+localStorage.setItem("weatherApiKey", "7688ab275a3f26de661a3491c41fec9b");
+const apiId = localStorage.getItem("weatherApiKey");
 const url = `https://api.openweathermap.org/data/2.5/forecast?lat=4.98&lon=8.34&cnt=40&units=metric&appid=${apiId}`;
 
 async function getWeatherForecast() {

@@ -1,7 +1,8 @@
 const currentWeather = document.querySelector('.current-weather');
 const currentDescription= document.querySelector('.current-description');
 
-const myApi = '7688ab275a3f26de661a3491c41fec9b';
+localStorage.setItem("weatherApiKey", "7688ab275a3f26de661a3491c41fec9b");
+const myApi = localStorage.getItem("weatherApiKey");
 const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=4.98&lon=8.34&units=metric&appid=${myApi}`
 
 
