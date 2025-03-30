@@ -150,5 +150,114 @@
        margin-left: 100px;
        
     }
+    .current-events{
+        width: 98vw;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 20px;
+        align-items: center;
+    }
+    .current-events h2{
+        text-align: center;
+        background-color: rgba(9, 174, 20, 0.218);
+        
+    }
+    .current-events a img{
+       display: block;
+       margin: auto;
+       margin-top: 50px;
+       margin-bottom: 20px;
+    }
+}
+.event-one, .event-two, .event-three{
+    border: 1px solid rgba(9, 174, 20, 0.218);
+}
+.banner a.push-down{
+    top: 300px;
+}
+
+.threeDaysForcast{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: auto;
+    margin-top: 10px;
+    width: 90vw;
+    
+}
+.forecast-item{
+    border: 1px solid rgba(9, 174, 20, 0.218);
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.forecast-item h3{
+    text-align: center;
+    background-color: rgba(9, 174, 20, 0.218);
+}
+.forecast-item img{
+    display: block;
+    margin: auto;
+}
+.weatherItems{
+    display: flex;
+    flex-direction: column;
+}
+h2.weatherUpdate{
+    text-align: center;
+   background: rgba(9, 174, 20, 0.218);
+   width: 90vw;
+   margin: auto;
+   margin-top: 30px;
+   
+    
+}
+p span{
+    font-weight: bold;
+}
+p.current-weather, p.current-description{
+    margin: 10px;
+    
+}
+.spotlight-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90vw;
+    margin: auto;
+   
+}
+.spotlight-section h2{
+    background-color:  rgba(9, 174, 20, 0.218);
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 20px;;
+}
+
+.spotlight-card {
+    background: rgba(9, 174, 20, 0.218);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(9, 174, 20, 0.218);
+    text-align: center;
+    border: 1px solid;
+}
+
+.spotlight-card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.spotlight-card a {
+    display: block;
+    margin-top: 10px;
+    color: #091484;
+    text-decoration: none;
+    font-weight: bold;
 }
 

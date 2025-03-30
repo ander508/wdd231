@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chamber of Commerce Page | Oluchukwu Offor</title>
+        <title>Chamber of Commerce Home Page | Oluchukwu Offor</title>
         <meta name="description" content="Chamber of Commerce Page">
         <meta name="author" content="Oluchukwu Offor">
         <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
-        <meta property="og:title" content="Chamber of Commerce | Oluchukwu Offor">
+        <meta property="og:title" content="Chamber of Commerce Home Page | Oluchukwu Offor">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://raw.githubusercontent.com/ander508/wdd231/main/chamber/images/commerce.webp">
         <meta property="og:url" content="https://ander508.github.io/wdd231/chamber/directory.html">
@@ -29,10 +29,12 @@
             as="style"
             onload="this.rel='stylesheet'"
         >
-        <script src="scripts/scripts.js" defer></script>
+        <script src="scripts/weather.js" defer></script>
+        <script src="scripts/current-weather.js" defer></script>
         <script src="scripts/date.js" async></script>
-        <script src="scripts/toggle.js" defer></script>
+        <script src="scripts/homepage-toggle.js" defer></script>
         <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/advert.js" defer></script>
     </head>
     <body>
         <header>
@@ -64,7 +66,7 @@
                         <a href="#" title="discover">Discover</a>
                     </li>
                 </ul>
-                <button class="button" aria-label="Toggle contrast mode">
+                <button class="contrast-button" aria-label="Toggle contrast mode">
                     <img
                         src="images/contrast.png"
                         alt="contrast"
@@ -80,73 +82,46 @@
             <div class="banner">
                 <img
                     src="images/chamber2.webp"
-                    alt="Chamber banner"
+                    alt="Hero Image "
                     loading="lazy"
-                    width="3500"
+                    width="2000"
                     height="400"
                 >
-                <a href="#">Keynote Ticket</a>
+                <a class="push-down" href="#">Join Us</a>
             </div>
             <h1>Home</h1>
-            <section class="part1">
-                <div class="events">
-                    <h2>Events</h2>
-                    <div class="event-space" aria-live="polite"></div>
+            <section class="current-events">
+                <div class="event-one">
+                    <h2>Board Meeting</h2>
+                    <a href="">
+                        <img src="images/events-use.webp" alt="">
+                    </a>
                 </div>
-                <div class="weather">
-                    <h2>Current Weather</h2>
-                    <div class="weather-space">
-                        <img src="images/weather.png" alt="Weather icon" loading="lazy">
-                        <div class="weather-list">
-                            <p>75°C</p>
-                            <p>Partly Cloudy</p>
-                            <p>High: 85°C</p>
-                            <p>Low: 50°C</p>
-                            <p>Humidity: 34%</p>
-                            <p>Sunrise: 7:30am</p>
-                            <p>Sunset: 9:59pm</p>
-                        </div>
-                    </div>
+                <div class="event-two">
+                    <h2>Networking Events</h2>
+                    <a href="">
+                        <img src="images/events-use.webp" alt="">
+                    </a>
                 </div>
-                <div class="forecast">
-                    <h2>Weather Forecast</h2>
-                    <div class="forecast-space">
-                        <p>
-                            <span>Today</span>
-                            : 90°F
-                        </p>
-                        <p>
-                            <span>Wednesday</span>
-                            : 89°F
-                        </p>
-                        <p>
-                            <span>Thursday</span>
-                            : 68°F
-                        </p>
-                    </div>
+                <div class="event-three">
+                    <h2>Awards Ceremonies</h2>
+                    <a href="">
+                        <img src="images/events-use.webp" alt="">
+                    </a>
                 </div>
             </section>
-            <div class="display">
-                <div class="grid-view">
-                    <img
-                        src="images/grid-view.webp"
-                        alt="grid view"
-                        width="40"
-                        height="40"
-                        loading="lazy"
-                    >
+            <section class="weatherItems">
+                <h2 class="weatherUpdate">Weather Update</h2>
+                <div>
+                    <p class="current-weather"></p>
+                    <p class="current-description"></p>
                 </div>
-                <div class="list-view">
-                    <img
-                        src="images/list-view.webp"
-                        alt="list view"
-                        width="40"
-                        height="40"
-                        loading="lazy"
-                    >
-                </div>
-            </div>
-            <div class="members" aria-live="polite"></div>
+                <section class="threeDaysForcast"></section>
+            </section>
+            <section class="spotlight-section">
+                <h2>Spotlight Members</h2>
+                <div class="spotlight-container"></div>
+            </section>
         </main>
         <footer>
             <div class="one">
