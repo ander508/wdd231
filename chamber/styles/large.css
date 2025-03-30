@@ -169,7 +169,7 @@
        margin-top: 50px;
        margin-bottom: 20px;
     }
-}
+    
 .event-one, .event-two, .event-three{
     border: 1px solid rgba(9, 174, 20, 0.218);
 }
@@ -261,3 +261,5 @@ p.current-weather, p.current-description{
     font-weight: bold;
 }
 
+
+}
