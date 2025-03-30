@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>${member.line}</p>
                 <p><strong>Phone:</strong> ${member.phone}</p>
                 <p><strong>Address:</strong> ${member.address}</p>
-                <a href="${member.url}" target="_blank">Visit Website</a>
+                <a href="${member.url}" target="_blank">Website: ${member.name}</a>
                 <p class="membership-level">${member.membership_level === 3 ? "🌟 Gold Member" : "🥈 Silver Member"}</p>
             `;
 
