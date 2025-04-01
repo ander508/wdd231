@@ -294,11 +294,12 @@ footer a img{
     border: 1px solid rgba(9, 174, 20, 0.218);
 }
 
-.smaller-font{
+p.smaller-font{
     font-size: 12px;
 }
-.bigger-font{
+p.bigger-font{
     font-size: 20px;
+    font-weight: bolder;
 }
 
 
