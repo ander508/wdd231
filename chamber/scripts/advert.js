@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.classList.add("spotlight-card");
 
             card.innerHTML = `
-                <img src="${member.imageurl}" alt="${member.name} Logo">
+                <img src="${member.imageurl}" alt="${member.name} width="100" height""100" Logo">
                 <h3>${member.name}</h3>
                 <p>${member.line}</p>
                 <p><strong>Phone:</strong> ${member.phone}</p>
