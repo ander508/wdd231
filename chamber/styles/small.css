@@ -18,6 +18,10 @@ header{
     
     
 }
+header section .img{
+    max-width: 100%;
+    max-width: 80px;
+}
 header nav {
     margin-left: auto;
     display: grid;
@@ -298,12 +302,9 @@ p.smaller-font{
     font-size: 12px;
 }
 p.bigger-font{
-<<<<<<< HEAD
     font-size: 20px;
     font-weight: bolder;
-=======
     font-size: 15px;
->>>>>>> 9af766859ee0993bd171742ded02ebe5b6259b28
 }
 
 
