@@ -80,13 +80,17 @@
         </header>
         <main>
             <div class="banner">
-                <img
-                    src="images/chamber2.webp"
-                    alt="Hero Image "
-                    loading="lazy"
-                    width="2000"
-                    height="400"
-                >
+                <picture>
+                    <source srcset="images/maltina-image.png" media="(min-width: 601px)">
+                    <source srcset="images/maltina-image1.webp" media="(min-width: 600px)">
+                    <img
+                        src="images/maltina-image.png"
+                        alt="Banner Image"
+                        loading="lazy"
+                        height="721"
+                        width="2464"
+                    >
+                </picture>
                 <a class="push-down" href="#">Join Us</a>
             </div>
             <h1>Home</h1>

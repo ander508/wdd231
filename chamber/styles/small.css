@@ -121,10 +121,10 @@ header section section{
     margin: auto;
     position: relative;
 }
-/* .banner img{
+.banner img{
    max-width: 100%;
    transition: height 0.5s ease-out;
-} */
+}
 .banner a{
     position: absolute;
     top: 150px;
