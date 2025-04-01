@@ -36,6 +36,7 @@
     header nav ul.list.open li a{
         text-decoration: none;
         border-bottom: none;
+        font-size: 18px;
     }
     
     header nav ul.list li a:hover{
@@ -186,7 +187,7 @@
     width: 90vw;
     
 }
-.forecast-item{
+/* .forecast-item{
     border: 1px solid rgba(9, 174, 20, 0.218);
     padding-bottom: 20px;
     box-sizing: border-box;
@@ -202,9 +203,9 @@
 .weatherItems{
     display: flex;
     flex-direction: column;
-}
-h2.weatherUpdate{
-    text-align: center;
+} */
+/* h2.weatherUpdate{
+   text-align: center;
    background: rgba(9, 174, 20, 0.218);
    width: 90vw;
    margin: auto;
@@ -218,11 +219,11 @@ p span{
 p.current-weather, p.current-description{
     margin: 10px;
     
-}
-.spotlight-section {
+} */
+/* .spotlight-section {
     text-align: center;
     padding: 20px;
-}
+} */
 
 .spotlight-container {
     display: grid;
@@ -232,7 +233,7 @@ p.current-weather, p.current-description{
     margin: auto;
    
 }
-.spotlight-section h2{
+/* .spotlight-section h2{
     background-color:  rgba(9, 174, 20, 0.218);
     width: 90vw;
     margin: auto;
@@ -259,7 +260,7 @@ p.current-weather, p.current-description{
     color: #091484;
     text-decoration: none;
     font-weight: bold;
-}
+} */
 
 
 }

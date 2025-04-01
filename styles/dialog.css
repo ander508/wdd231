@@ -1,0 +1,9 @@
+#course-details{
+   width: 300px;
+   height: 200px;
+}
+
+#course-details::backdrop{
+   background-color: white;
+    
+}

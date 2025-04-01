@@ -112,7 +112,7 @@ allButton.addEventListener("click", () => {
                     courseList.innerHTML+= `<li class="completed">${course.subject} ${course.number} - ${course.credits} credits</li>`;
                 }
                 else{
-                    courseList.innerHTML+= `<li>${course.subject} ${course.number} - ${course.credits} credits</li>`;
+                    courseList.innerHTML+= `<li class="not-completed">${course.subject} ${course.number} - ${course.credits} credits</li>`;
                 }
         
     });
@@ -144,7 +144,7 @@ cseButton.addEventListener("click", () => {
             courseList.innerHTML+= `<li class="completed">${course.subject} ${course.number} - ${course.credits} credits</li>`;
         }
         else{
-            courseList.innerHTML+= `<li>${course.subject} ${course.number} - ${course.credits} credits</li>`;
+            courseList.innerHTML+= `<li class="not-completed>${course.subject} ${course.number} - ${course.credits} credits</li>`;
         }
     });
         courseList.innerHTML += `<li class="credit"><strong>Total Credits: ${totalCredits}</strong></li>`;
@@ -163,7 +163,7 @@ wddButton.addEventListener("click", () => {
                     courseList.innerHTML+= `<li class="completed">${course.subject} ${course.number} - ${course.credits} credits</li>`;
                 }
                 else{
-                    courseList.innerHTML+= `<li>${course.subject} ${course.number} - ${course.credits} credits</li>`;
+                    courseList.innerHTML+= `<li class="completed">${course.subject} ${course.number} - ${course.credits} credits</li>`;
                 }
     });
     courseList.innerHTML += `<li class="credit"><strong>Total Credits: ${totalCredits}</strong></li>`;
