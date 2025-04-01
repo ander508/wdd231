@@ -18,10 +18,10 @@ header{
     
     
 }
-header section .img{
+/* header section .img{
     max-width: 100%;
     max-width: 80px;
-}
+} */
 header nav {
     margin-left: auto;
     display: grid;
