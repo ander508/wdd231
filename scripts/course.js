@@ -92,7 +92,7 @@ courses.forEach(function (course){
         courseList.innerHTML+= `<li class="completed">${course.subject} ${course.number}</li>`;
     }
     else{
-        courseList.innerHTML+= `<li>${course.subject} ${course.number}</li>`;
+        courseList.innerHTML+= `<li class="not-completed">${course.subject} ${course.number}</li>`;
     }
 })
 
@@ -168,3 +168,80 @@ wddButton.addEventListener("click", () => {
     });
     courseList.innerHTML += `<li class="credit"><strong>Total Credits: ${totalCredits}</strong></li>`;
 });
+
+
+
+// const courseContainer = document.querySelector('#course-list');
+// courseContainer.addEventListener('click', (event) => {
+//     if (event.target.tagName === 'LI') {
+//         const courseText = event.target.textContent.split(" ");
+//         const subject = courseText[0];
+//         const number = parseInt(courseText[1]);
+
+//         const selectedCourse = courses.find(course => 
+//             course.subject === subject && course.number === number
+//         );
+
+//         if (selectedCourse) {
+//             displayCourseDetails(selectedCourse);
+//         }
+//     }
+// });
+
+// const complete = document.querySelector('.completed');
+// const courseDetails = document.querySelector('#course-details');
+
+// function displayCourseDetails(course){
+//     courseDetails.innerHTML = "";
+//     courseDetails.innerHTML = `
+//         <button class="closeModal">X</button>
+//         <h2>${course.subject} ${course.number}</h2>
+//         <h3>${course.title}</h3>
+//         <p><strong>Credits</strong>: ${course.credits}</p>
+//         <p><strong>Cerdificate</strong>: ${course.certificate}</p>
+//         <p><${course.description}</p>
+//         <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+//     `;
+//         courseDetails.showModal();
+    
+//         const closeButton = courseDetails.querySelector('.closeModal');
+//         closeButton.addEventListener('click', () => {
+//         courseDetails.close();
+// });
+ 
+// }
+
+
+    // const ul = document.querySelector('#course-list');
+    // const dialog = document.querySelector('#course-details');
+    
+    
+    // ul.addEventListener('click', (event) => {
+    //     const clickedLi = event.target.closest('li'); //This determines the clicked li out of all available li
+    //     if (clickedLi) {
+    //         const courseName = clickedLi.textContent;
+            
+    //         const courseDetails = courses.find(course =>course.subject + " " 
+    //             + course.number === courseName || course.subject + " " + course.number + " - " + course.credits + " " + "credits" === courseName)  // This retreives the course details on the clicked li
+    //         if(courseDetails){
+    //             dialog.innerHTML = '';
+    //             dialog.innerHTML = `
+    //                 <button class="closeModal">X</button>
+    //                 <h2>${courseDetails.subject} ${courseDetails.number}</h2>
+    //                 <h3>${courseDetails.title}</h3>
+    //                 <p><strong>Credits</strong>: ${courseDetails.credits}</p>
+    //                 <p><strong>Cerdificate</strong>: ${courseDetails.certificate}</p>
+    //                 <p><${courseDetails.description}</p>
+    //                 <p><strong>Technologies</strong>: ${courseDetails.technology.join(', ')}</p>
+    //             `
+    //             dialog.showModal(); // Open the dialog
+    //             const closeDialog = document.querySelector('.closeModal');
+    //             closeDialog.addEventListener("click", () => {
+    //                 dialog.close();
+    //             });
+    //         };
+   
+            
+    //     }
+    // });
+    

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chamber of Commerce Thank You Page | Oluchukwu Offor</title>
+        <meta name="description" content="Chamber of Commerce Page">
+        <meta name="author" content="Oluchukwu Offor">
+        <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
+        <meta property="og:title" content="Chamber of Commerce Thank You Page | Oluchukwu Offor">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://raw.githubusercontent.com/ander508/wdd231/main/chamber/images/commerce.webp">
+        <meta property="og:url" content="https://ander508.github.io/wdd231/chamber/directory.html">
+        <link
+            rel="preload"
+            href="styles/normalize.css"
+            as="style"
+            onload="this.rel='stylesheet'"
+        >
+        <link
+            rel="preload"
+            href="styles/small.css"
+            as="style"
+            onload="this.rel='stylesheet'"
+        >
+        <link
+            rel="preload"
+            href="styles/large.css"
+            as="style"
+            onload="this.rel='stylesheet'"
+        >
+        <link rel="stylesheet" href="styles/join.css">
+        <link rel="stylesheet" href="styles/join-large.css">
+        <script src="scripts/date.js" async></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/join.js" defer></script>
+        <script src="scripts/hamburger.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <section>
+                <img
+                    src="images/logo4.png"
+                    alt="Site logo"
+                    width="60"
+                    height="60"
+                    loading="lazy"
+                >
+                <div>
+                    <p class="bigger-font">Timbuktu</p>
+                    <p class="smaller-font">Chamber of Commerce</p>
+                </div>
+            </section>
+            <nav>
+                <ul class="list">
+                    <li>
+                        <a href="#" title="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" title="directory">Directory</a>
+                    </li>
+                    <li>
+                        <a href="#" title="join">Join</a>
+                    </li>
+                    <li>
+                        <a href="#" title="discover">Discover</a>
+                    </li>
+                </ul>
+                <button class="contrast-button" aria-label="Toggle contrast mode">
+                    <img
+                        src="images/contrast.png"
+                        alt="contrast"
+                        width="50"
+                        height="50"
+                        loading="lazy"
+                    >
+                </button>
+                <button class="hamburger" aria-label="Toggle menu"></button>
+            </nav>
+        </header>
+        <main>
+            <div class="banner">
+                <picture>
+                    <source srcset="images/maltina-image.webp" media="(min-width: 601px)">
+                    <source srcset="images/maltina-image1.webp" media="(min-width: 600px)">
+                    <img
+                        src="images/maltina-image.webp"
+                        alt="Banner Image"
+                        loading="lazy"
+                        height="721"
+                        width="2464"
+                    >
+                </picture>
+                <a href="#">Keynote Ticket</a>
+            </div>
+            <h1>Thank You Page</h1>
+            <section></section>
+            <h2>Thank you for taking this bold step!</h2>
+            <p class="data"></p>
+            <p id="timestamp"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="one">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De La Palx</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>
+                Email:
+                <a href="#">info@timbuktucc.org</a>
+            </p>
+            <p>
+                Phone:
+                <a href="#">(222) 555-2300</a>
+            </p>
+        </div>
+        <div class="two">
+            <a href="#">
+                <img
+                    src="images/youtube.png"
+                    alt="YouTube"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                >
+            </a>
+            <a href="#">
+                <img
+                    src="images/twitter.png"
+                    alt="Twitter"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                >
+            </a>
+            <a href="#">
+                <img
+                    src="images/linkedin.png"
+                    alt="LinkedIn"
+                    loading="lazy"
+                    width="50"
+                    height="50"
+                >
+            </a>
+        </div>
+        <div class="three">
+            <p>WDD231 Class Project</p>
+            <p>Marie Martinez</p>
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                Timbuktu Chamber of Commerce
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

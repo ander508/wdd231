@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chamber of Commerce Join Page | Oluchukwu Offor</title>
+        <meta name="description" content="Chamber of Commerce Page">
+        <meta name="author" content="Oluchukwu Offor">
+        <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
+        <meta property="og:title" content="Chamber of Commerce Join Page | Oluchukwu Offor">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://raw.githubusercontent.com/ander508/wdd231/main/chamber/images/commerce.webp">
+        <meta property="og:url" content="https://ander508.github.io/wdd231/chamber/directory.html">
+        <link
+            rel="preload"
+            href="styles/normalize.css"
+            as="style"
+            onload="this.rel='stylesheet'"
+        >
+        <link
+            rel="preload"
+            href="styles/small.css"
+            as="style"
+            onload="this.rel='stylesheet'"
+        >
+        <link
+            rel="preload"
+            href="styles/large.css"
+            as="style"
+            onload="this.rel='stylesheet'"
+        >
+        <link rel="stylesheet" href="styles/join.css">
+        <link rel="stylesheet" href="styles/join-large.css">
+        <link rel="stylesheet" href="styles/dialog.css">
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/timestamp.js" defer></script>
+        <script src="scripts/dialog.js" defer></script>
+        <script src="scripts/hamburger.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <section>
+                <img
+                    src="images/logo4.png"
+                    alt="Site logo"
+                    width="60"
+                    height="60"
+                    loading="lazy"
+                >
+                <div>
+                    <p class="bigger-font">Timbuktu</p>
+                    <p class="smaller-font">Chamber of Commerce</p>
+                </div>
+            </section>
+            <nav>
+                <ul class="list">
+                    <li>
+                        <a href="#" title="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" title="directory">Directory</a>
+                    </li>
+                    <li>
+                        <a href="#" title="join">Join</a>
+                    </li>
+                    <li>
+                        <a href="#" title="discover">Discover</a>
+                    </li>
+                </ul>
+                <button class="contrast-button" aria-label="Toggle contrast mode">
+                    <img
+                        src="images/contrast.png"
+                        alt="contrast"
+                        width="50"
+                        height="50"
+                        loading="lazy"
+                    >
+                </button>
+                <button class="hamburger" aria-label="Toggle menu"></button>
+            </nav>
+        </header>
+        <main>
+            <div class="banner">
+                <picture>
+                    <source srcset="images/maltina-image.webp" media="(min-width: 601px)">
+                    <source srcset="images/maltina-image1.webp" media="(min-width: 600px)">
+                    <img
+                        src="images/maltina-image.webp"
+                        alt="Banner Image"
+                        loading="lazy"
+                        height="721"
+                        width="2464"
+                    >
+                </picture>
+                <a href="#">Keynote Ticket</a>
+            </div>
+            <h1>Join</h1>
+            <div class="form-member-section">
+                <form action="thankyou.html" method="get">
+                    <h2>Membership Application Form</h2>
+                    <label for="first">
+                        First Name
+                        <input
+                            type="text"
+                            required
+                            name="first"
+                            title="Your First Name"
+                            autocomplete="given-name"
+                            id="first"
+                        >
+                    </label>
+                    <label for="last">
+                        Last Name
+                        <input
+                            type="text"
+                            required
+                            name="last"
+                            title="Your Last Name"
+                            autocomplete="family-name"
+                            id="last"
+                        >
+                    </label>
+                    <label for="org-title">
+                        Organizational Title
+                        <input
+                            type="text"
+                            name="org-title"
+                            title="organizational-title"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z\- ]{7,}"
+                            required
+                            id="org-title"
+                        >
+                    </label>
+                    <label for="email">
+                        Email
+                        <input
+                            type="email"
+                            required
+                            name="email"
+                            title="Your Email Address"
+                            autocomplete="email"
+                            id="email"
+                            placeholder="xyz@email.com"
+                        >
+                    </label>
+                    <label for="phone">
+                        Phone Number
+                        <input
+                            type="tel"
+                            required
+                            name="phone"
+                            title="Your Phone Number"
+                            autocomplete="tel"
+                            placeholder="555-1230926"
+                            id="phone"
+                        >
+                    </label>
+                    <label for="organization">
+                        Organization Name
+                        <input
+                            type="text"
+                            required
+                            name="organization"
+                            title="Organization Name"
+                            autocomplete="organization"
+                            id="organization"
+                        >
+                    </label>
+                    <label for="membership">
+                        Membership Level
+                        <select id="membership" name="membership" required>
+                            <option value="">Select a Membership Level</option>
+                            <option value="NP">NP Membership (Non-Profit, No Fee)</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label for="description">
+                        Business/Organization Description
+                        <textarea
+                            id="description"
+                            name="description"
+                            title="Business/Organization Description"
+                            rows="4"
+                            cols="50"
+                            required
+                        ></textarea>
+                    </label>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <button type="submit">Apply for Membership</button>
+                </form>
+                <div class="card-section">
+                    <h2>Membership Levels</h2>
+                    <div class="card1">
+                        <p>Non Profit Membership Level</p>
+                        <button id="openButton1">Learn More</button>
+                    </div>
+                    <div class="card2">
+                        <p>Bronze Membership Level</p>
+                        <button id="openButton2">Learn More</button>
+                    </div>
+                    <div class="card3">
+                        <p>Silver Membership Level</p>
+                        <button id="openButton3">Learn More</button>
+                    </div>
+                    <div class="card4">
+                        <p>Gold Membership Level</p>
+                        <button id="openButton4">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <dialog id="dialogBox">
+                <button id="closeButton">X</button>
+                <div></div>
+            </dialog>
+        </main>
+        <footer>
+            <div class="one">
+                <p>Timbuktu Chamber of Commerce</p>
+                <p>10 Rue De La Palx</p>
+                <p>Timbuktu, Mali 999</p>
+                <p>
+                    Email:
+                    <a href="#">info@timbuktucc.org</a>
+                </p>
+                <p>
+                    Phone:
+                    <a href="#">(222) 555-2300</a>
+                </p>
+            </div>
+            <div class="two">
+                <a href="#">
+                    <img
+                        src="images/youtube.png"
+                        alt="YouTube"
+                        loading="lazy"
+                        width="50"
+                        height="50"
+                    >
+                </a>
+                <a href="#">
+                    <img
+                        src="images/twitter.png"
+                        alt="Twitter"
+                        loading="lazy"
+                        width="50"
+                        height="50"
+                    >
+                </a>
+                <a href="#">
+                    <img
+                        src="images/linkedin.png"
+                        alt="LinkedIn"
+                        loading="lazy"
+                        width="50"
+                        height="50"
+                    >
+                </a>
+            </div>
+            <div class="three">
+                <p>WDD231 Class Project</p>
+                <p>Marie Martinez</p>
+                <p>
+                    &copy;
+                    <span id="currentYear"></span>
+                    Timbuktu Chamber of Commerce
+                </p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+    </body>
+</html>

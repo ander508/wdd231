@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-member-section{
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 0 0 10px rgb(230, 230, 230);
+} 
+
+.form-member-section form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    
+}
+.form-member-section form label{
+    width: 100%;
+}
+.form-member-section form label input{
+    height: 44px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid rgb(140, 140, 140);
+    border-left: 8px solid rgb(192, 190, 190);
+    
+}
+.form-member-section form label select{
+    height: 44px;
+    width: 100%;
+    display: block;  
+    border-right: 25px solid rgb(192, 190, 190);
+    border: 1px solid rgb(177, 176, 176);
+    
+}
+.form-member-section form label textarea{
+    display: block;  
+    width: 100%;
+    border: 1px solid rgb(165, 165, 165);
+    
+}
+.form-member-section form button{
+    /* width: 40vw; */
+    height: 44px;
+    width: 70%;
+    border: 1px solid rgb(205, 205, 205);
+}
+.card-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+
+.card1, .card2{
+    background-color: rgb(192, 190, 190);
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px 30px;
+    margin: auto;
+    animation-duration: 3s;
+    animation-name: slide-in;
+    
+}
+
+
+.card3, .card4{
+    background-color: rgb(192, 190, 190);
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px 2px;
+    margin: auto;
+    box-sizing: border-box;
+    animation-duration: 5s;
+    animation-name: slide-in;
+    
+}
+@keyframes slide-in {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+.card1 button, .card2 button, .card3 button, .card4 button{
+    display: block;
+    height: 44px;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+main>h2{
+    /* width: 20%; */
+    /* margin: auto; */
+    padding: 40px;
+    text-align: left;
+    /* border: 1px solid; */
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* width: 20%; */
+    padding: 40px;
+    /* margin: auto; */
+}
+.data p{
+    padding: 10px 0;
+    font-size: 15px;
+}
+span{
+    font-weight: bolder;
+}
+footer{
+    font-size: 12px;
+}
+
+header .button, .contrast-button{
+    margin: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* margin-right: 10px; */
+    
+}
+header button.hamburger{
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: black;
+    /* margin-right: 20px; */
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+header button.hamburger::before{
+    content: "\2630";
+}
+header button.hamburger.open::before{
+    content: "X";
+}
+header nav ul.list.open{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    gap: 2px;
+}
+header nav ul.list.open li{
+    list-style-type: none;
+}
+header nav ul.list.open li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+header nav ul.list.open li a:hover{
+background-color: aqua;
+    
+}

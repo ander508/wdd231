@@ -1,0 +1,40 @@
+@media (min-width:650px){
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .form-member-section{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 40px;
+        border: 1px solid;
+        width: 90%;
+        border: 1px solid rgb(230, 230, 230);
+        box-shadow: 0 0 10px rgb(230, 230, 230);
+        margin-top: 30px;
+    }
+    
+    .form-member-section form, .card-section{
+        /* border: 1px solid; */
+        padding: 30px;
+    }
+    
+    
+    .form-member-section form{
+        width: 60%;
+        margin: auto;
+    }
+    .form-member-section{
+      
+        padding: 5px;
+    }
+    .card1, .card2, .card3, .card4{
+        width: 60%;
+        margin: auto;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
