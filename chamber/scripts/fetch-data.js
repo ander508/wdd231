@@ -2,13 +2,22 @@ document.addEventListener("DOMContentLoaded", async() =>{
     
      const url = "../chamber/data/data.json";
     async function fetchData(url){
-        
-        const response = await fetch(url);
-        if (response.ok) {
-            const neededData = await response.json()
-            console.log(neededData)
-            buildCard(neededData)
+        try{
+            const response = await fetch(url);
+            if (response.ok) {
+               const neededData = await response.json()
+               console.log(neededData)
+               buildCard(neededData)
+             }
+            else{
+              console.log("Incorrect url")
+             }
+          }
+        catch (error){
+            console.Error("Error", error)
         }
+        
+        
         
     }
     fetchData(url)
