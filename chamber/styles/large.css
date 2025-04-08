@@ -36,7 +36,7 @@
     header nav ul.list.open li a{
         text-decoration: none;
         border-bottom: none;
-        font-size: 18px;
+        
     }
     
     header nav ul.list li a:hover{
@@ -44,6 +44,7 @@
         color: white;
         
     }
+   
     a{
         text-decoration: none;
     }
