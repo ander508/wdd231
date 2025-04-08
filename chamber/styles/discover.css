@@ -1,0 +1,97 @@
+    
+    .cad{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        /* border: 1px solid; */
+        gap: 20px;
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+         "four"
+        "five"
+         "six"
+        "seven"
+         "eight"
+        ;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .one{
+        grid-area: one;
+    }
+    .two {
+        grid-area: two;
+    }
+    .three{
+        grid-area: three;
+    }
+    .four{
+        grid-area: four;
+    }
+    .five {
+        grid-area: five;
+    }
+    .six{
+        grid-area: six;
+    }
+    .seven {
+        grid-area: seven;
+    }
+    .eight{
+        grid-area: eight;
+    }
+    
+    .one, .two, .three, .four, .five, .six, .seven, .eight{
+        padding: 20px;
+        background-color: rgba(176, 177, 178, 0.123);
+        display: grid;
+        grid-template-areas: 
+        "heading"
+        "img"
+         "layout"
+        "button"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr auto 50px;
+    }
+.heading{
+    grid-area: heading;
+    text-align: center;
+}
+.img{
+    grid-area: img;
+    width: 100%;
+    border-radius: 10px;;
+}
+.figCaption{
+    text-align: center;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 30px;
+}
+.layout{
+    margin: 20px 0;
+}
+.paragraph{
+    max-width: 100%;
+}
+.button{
+    display: block;
+    height: 44px;
+    padding: 7px;
+    line-height: 20px;
+    font-size: 20px;
+    box-sizing:border-box;
+    border: none;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: aqua;
+    
+}
+
