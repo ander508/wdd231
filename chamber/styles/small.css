@@ -129,8 +129,10 @@ header section section{
     position: relative;
 }
 .banner img{
+   aspect-ratio: 640/187;
    max-width: 100%;
-   transition: height 0.5s ease-out;
+   height: 187;
+   transition: height 5s ease-out;
 }
 .banner a{
     position: absolute;
