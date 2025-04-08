@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async() =>{
             card.innerHTML +=`<div class="${item.serial}">
             <h2 class="heading">${item.name}</h2>
             <figure>
-            <img class="img" src="${item.image}" alt="${item.name} width="300" height="200" loading="lazy">
+            <img class="img" src="${item.image}" alt="${item.name}" width="300" height="200" loading="lazy">
             </figure>
             <div class="layout">
                 <p class="paragraph">${item.description}</p>
