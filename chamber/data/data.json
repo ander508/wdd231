@@ -1,0 +1,59 @@
+[
+    { 
+     "serial": "one",
+     "image": "/chamber/images/abu-zaria.webp",
+      "name": "Millenium Park Abuja",
+      "address": "Abuja, Nigeria",
+      "description": "Zuma Rock is a giant monolith and one of Nigeria’s most iconic landmarks. It is often referred to as the 'Gateway to Abuja' and is a popular spot for sightseeing and photography."
+    },
+    {
+      "serial": "two",
+      "image": "/chamber/images/eko-atlantic-lagos.webp",
+      "name": "Erin Ijesha Waterfall",
+      "address": "Erin Ijesha, Osun State",
+      "description": "Also known as Olumirin Waterfalls, this natural wonder is a beautiful series of cascading falls surrounded by lush greenery, ideal for hiking and nature exploration."
+    },
+    {
+      "serial": "three",
+      "image": "/chamber/images/lekki-beach-lagos.webp",
+      "name": "Lekki Beach Lagos",
+      "address": "Lekki, Lagos State",
+      "description": "A popular eco-tourism destination featuring Nigeria’s longest canopy walkway, nature trails, and wildlife like monkeys and peacocks in a serene forest reserve."
+    },
+    {
+      "serial": "four",
+      "image": "/chamber/images/obudu-ranch.webp",
+      "name": "Obudu Mountain Resort",
+      "address": "Obudu, Cross River State",
+      "description": "This resort is located on a picturesque plateau and offers a temperate climate, cable car rides, hiking trails, and breathtaking views of the surrounding mountains."
+    },
+    {
+      "serial": "five",
+      "image": "/chamber/images/nike-lake-enugu.webp",
+      "name": "Nike Art Gallery",
+      "address": "Lekki, Lagos State",
+      "description": "One of the largest art galleries in West Africa, showcasing Nigerian contemporary and traditional artworks, textiles, sculptures, and more."
+    },
+    {
+      "serial": "six",
+      "image": "/chamber/images/abu-zaria.webp",
+      "name": "Yankari National Park",
+      "address": "Bauchi State",
+      "description": "A premier wildlife destination in Nigeria, home to elephants, lions, and baboons, along with natural warm springs ideal for swimming and relaxation."
+    },
+    {
+      "serial": "seven",
+      "image": "/chamber/images/ogbunike-cave.webp",
+      "name": "Ogbunike Caves",
+      "address": "Ogbunike, Anambra State",
+      "description": "An ancient and sacred site made up of interconnected caves, waterfalls, and streams, with a long history tied to local spiritual beliefs."
+    },
+    {
+      "serial": "eight",
+      "image": "/chamber/images/millenium-park-abuja.webp",
+      "name": "Aso Rock",
+      "address": "Abuja, FCT",
+      "description": "A prominent rock formation in Nigeria’s capital, located near the Presidential Villa, offering great views and a chance to learn about Nigerian governance and history."
+    }
+  ]
+  

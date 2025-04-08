@@ -53,6 +53,13 @@ header nav ul.list.open li a:hover{
 background-color: aqua;
     
 }
+header nav ul li{
+    padding: 20px;
+}
+header nav ul li a{
+    padding: 5px;
+    border-radius: 5px;
+}
 
 header .button, .contrast-button{
     margin: auto;
@@ -269,14 +276,14 @@ footer {
     /* align-items: center; */
    
   }
-footer div.one, div.three{
+footer div.one, div.three, footer div.oneone, div.threethree{
     justify-items: left;
     text-align: left;
     padding-left: 20px;
     box-sizing: border-box;
     align-self: center;
 }
-footer div.two {
+footer div.two, footer div.twotwo {
     display: flex;
     gap: 40px;
     align-self: center;
@@ -395,4 +402,18 @@ h2.weatherUpdate{
     color: #091484;
     text-decoration: none;
     font-weight: bold;
+}
+aside{
+    width: 90%;
+    height: auto;
+    /* padding: 20px; */
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 20px;
+    background-color: rgba(0, 145, 255, 0.123);
+    
+}
+.active{
+    background-color: #fff;
+    padding: px;
 }

@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chamber of Commerce Page | Oluchukwu Offor</title>
+        <title>Chamber of Commerce Join Page | Oluchukwu Offor</title>
         <meta name="description" content="Chamber of Commerce Page">
         <meta name="author" content="Oluchukwu Offor">
         <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
-        <meta property="og:title" content="Chamber of Commerce | Oluchukwu Offor">
+        <meta property="og:title" content="Chamber of Commerce Join Page | Oluchukwu Offor">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://raw.githubusercontent.com/ander508/wdd231/main/chamber/images/commerce.webp">
         <meta property="og:url" content="https://ander508.github.io/wdd231/chamber/directory.html">
@@ -29,10 +29,18 @@
             as="style"
             onload="this.rel='stylesheet'"
         >
-        <script src="scripts/scripts.js" defer></script>
-        <script src="scripts/date.js" async></script>
-        <script src="scripts/toggle.js" defer></script>
+        <link rel="stylesheet" href="styles/join.css">
+        <link rel="stylesheet" href="styles/join-large.css">
+        <link rel="stylesheet" href="styles/dialog.css">
+        <link rel="stylesheet" href="styles/discover-small.css">
+        <link rel="stylesheet" href="styles/discover-medium.css">
+        <link rel="stylesheet" href="styles/discover-large.css">
+        <script src="scripts/date.js" defer></script>
         <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/timestamp.js" defer></script>
+        <script src="scripts/fetch-data.js" defer></script>
+        <script src="scripts/hamburger.js" defer></script>
+        <script src="scripts/last-visit.js" defer></script>
     </head>
     <body>
         <header>
@@ -40,14 +48,14 @@
                 <img
                     src="images/logo4.png"
                     alt="Site logo"
-                    width="80"
-                    height="80"
+                    width="60"
+                    height="60"
                     loading="lazy"
                 >
-                <section>
-                    <h2>Timbuktu</h2>
-                    <h4>Chamber of Commerce</h4>
-                </section>
+                <div>
+                    <p class="bigger-font">Timbuktu</p>
+                    <p class="smaller-font">Chamber of Commerce</p>
+                </div>
             </section>
             <nav>
                 <ul class="list">
@@ -55,16 +63,16 @@
                         <a href="index.html" title="home">Home</a>
                     </li>
                     <li>
-                        <a href="directory.html" class="active" title="directory">Directory</a>
+                        <a href="directory.html" title="directory">Directory</a>
                     </li>
                     <li>
                         <a href="join.html" title="join">Join</a>
                     </li>
                     <li>
-                        <a href="discover.html"  title="discover">Discover</a>
+                        <a href="discover.html" class="active" title="discover">Discover</a>
                     </li>
                 </ul>
-                <button class="button" aria-label="Toggle contrast mode">
+                <button class="contrast-button" aria-label="Toggle contrast mode">
                     <img
                         src="images/contrast.png"
                         alt="contrast"
@@ -91,69 +99,12 @@
                 </picture>
                 <a href="#">Keynote Ticket</a>
             </div>
-            <h1>Home</h1>
-            <section class="part1">
-                <div class="events">
-                    <h2>Events</h2>
-                    <div class="event-space" aria-live="polite"></div>
-                </div>
-                <div class="weather">
-                    <h2>Current Weather</h2>
-                    <div class="weather-space">
-                        <img src="images/weather.png" alt="Weather icon" loading="lazy">
-                        <div class="weather-list">
-                            <p>75°C</p>
-                            <p>Partly Cloudy</p>
-                            <p>High: 85°C</p>
-                            <p>Low: 50°C</p>
-                            <p>Humidity: 34%</p>
-                            <p>Sunrise: 7:30am</p>
-                            <p>Sunset: 9:59pm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="forecast">
-                    <h2>Weather Forecast</h2>
-                    <div class="forecast-space">
-                        <p>
-                            <span>Today</span>
-                            : 90°F
-                        </p>
-                        <p>
-                            <span>Wednesday</span>
-                            : 89°F
-                        </p>
-                        <p>
-                            <span>Thursday</span>
-                            : 68°F
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <div class="display">
-                <div class="grid-view">
-                    <img
-                        src="images/grid-view.webp"
-                        alt="grid view"
-                        width="40"
-                        height="40"
-                        loading="lazy"
-                    >
-                </div>
-                <div class="list-view">
-                    <img
-                        src="images/list-view.webp"
-                        alt="list view"
-                        width="40"
-                        height="40"
-                        loading="lazy"
-                    >
-                </div>
-            </div>
-            <div class="members" aria-live="polite"></div>
+            <h1>Discover</h1>
+            <aside id="visit-message"></aside>
+            <div class="cad"></div>
         </main>
         <footer>
-            <div class="one">
+            <div class="oneone">
                 <p>Timbuktu Chamber of Commerce</p>
                 <p>10 Rue De La Palx</p>
                 <p>Timbuktu, Mali 999</p>
@@ -161,12 +112,13 @@
                     Email:
                     <a href="#">info@timbuktucc.org</a>
                 </p>
+                <figure></figure>
                 <p>
                     Phone:
                     <a href="#">(222) 555-2300</a>
                 </p>
             </div>
-            <div class="two">
+            <div class="twotwo">
                 <a href="#">
                     <img
                         src="images/youtube.png"
@@ -195,7 +147,7 @@
                     >
                 </a>
             </div>
-            <div class="three">
+            <div class="threethree">
                 <p>WDD231 Class Project</p>
                 <p>Marie Martinez</p>
                 <p>
