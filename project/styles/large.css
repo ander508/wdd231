@@ -1,0 +1,8 @@
+@media (min-width:1200px){
+    nav ul li a{
+        font-size: 1vw;
+    } 
+    nav.open ul li a{
+        font-size: 1vw;
+    } 
+}

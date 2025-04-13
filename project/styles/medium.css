@@ -1,0 +1,41 @@
+@media (min-width:600px){
+    .menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        max-height: 500px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 10px;
+        
+    }
+    nav.open ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    nav ul li{
+        width: 15%;
+        background-color: #c3d6b098;
+        
+    }
+    
+    nav ul li a{
+        font-size: 2vw;
+        font-weight: bold;
+        width: 100%;
+        font-weight: bolder;
+    }
+    nav.open ul li a{
+        font-size: 2vw;
+        font-weight: bolder;
+        
+    }
+    
+    
+}

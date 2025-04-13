@@ -1,4 +1,4 @@
-const messageContainer = document.querySelector('#visit-message');
+const messageContainer = document.querySelector('.last-visit');
 
 const MILLISECOND_IN_A_DAY = 1000 * 60 * 60 * 24;
 
@@ -30,10 +30,12 @@ if (!lastVisit) {
 }
 }
 messageContainer.textContent = message;
+messageContainer.classList.add('open')
 
 function displayInSeconds(){
     setTimeout(() =>{
 messageContainer.textContent = "";
+messageContainer.classList.remove('open')
         
     },10000)
 }

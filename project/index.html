@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nigeria Travel Destination | Oluchukwu Offor</title>
+        <meta name="description" content="Nigeria Travel Destination | Oluchukwu Offor">
+        <meta name="author" content="Oluchukwu Offor">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <script src="scripts/menu.js" defer></script>
+        <script src="scripts/lastVisit.js" defer></script>
+        <script src="scripts/location.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <meta property="og:title" content="Nigeria Travel Destination | Oluchukwu Offor">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="images/nigeria.jpeg">
+        <meta property="og:url" content="https://ander508.github.io/wdd231/">
+    </head>
+    <body>
+        <header>
+            <img
+                src="images/logo4.webp"
+                alt="Logo"
+                width="90"
+                height="90"
+                loading="lazy"
+            >
+            <div class="menu"></div>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="">Destination</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <picture>
+                <source srcset="images/travel-guide9.webp" media="(min-width: 601px)">
+                <source srcset="images/travel-guide12.webp" media="(max-width: 600px)">
+                <source srcset="images/travel-guide11.webp" media="(max-width: 400px)">
+                <img
+                    src="images/travel-guide9.webp"
+                    alt="Travel Guide"
+                    width="2000"
+                    height="500"
+                    loading="lazy"
+                >
+            </picture>
+        </div>
+        <main>
+            <h1>Home</h1>
+            <aside class="last-visit"></aside>
+            <form action="">
+                <label for="search">
+                    Search
+                </label>
+                <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    placeholder="Search Destination..."
+                    class="search-destination"
+                >
+            </form>
+            <ul></ul>
+            <section class="destination"></section>
+        </main>
+        <footer>
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                | Oluchukwu A. Offor
+            | Calabar, Nigeria.
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
