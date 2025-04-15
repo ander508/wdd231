@@ -7,17 +7,20 @@
       "latitude": 9.1233,
       "longitude": 7.2408,
       "image": "../project/images/card-pic.webp",
-      "period": "July - August"
+      "period": "July - August",
+      "zone": "North"
     },
     {
-        "name": "Zuma Rock",
-        "city": "Madalla",
+        "name": "Tinapa",
+        "city": "Calabar",
         "address": "Zuma Rock, Madalla, Niger State",
         "state": "Niger",
         "latitude": 9.1233,
         "longitude": 7.2408,
         "image": "../project/images/card-pic.webp",
-        "period": "December - January"
+        "period": "December - January",
+        "zone": "South"
+        
       },
     {
       "name": "Olumo Rock",
@@ -27,7 +30,9 @@
       "latitude": 7.1561,
       "longitude": 3.3506,
       "image": "../project/images/card-pic.webp",
-      "period": "December - January"
+      "period": "December - January",
+      "zone": "West"
+      
     },
     {
       "name": "Obudu Mountain Resort",
@@ -37,7 +42,9 @@
       "latitude": 6.3703,
       "longitude": 9.3763,
       "image": "../project/images/card-pic.webp",
-      "period": "July - September"
+      "period": "July - September",
+      "zone": "South"
+      
     },
     {
       "name": "Nike Art Gallery",
@@ -47,7 +54,9 @@
       "latitude": 6.4281,
       "longitude": 3.4317,
       "image": "../project/images/card-pic.webp",
-      "period": "Novermber - January"
+      "period": "Novermber - January",
+      "zone": "East"
+      
     },
     {
       "name": "Erin Ijesha Waterfall",
@@ -57,7 +66,9 @@
       "latitude": 7.5783,
       "longitude": 4.9244,
       "image": "../project/images/card-pic.webp",
-      "period": "March - May"
+      "period": "March - May",
+      "zone": "West"
+      
     },
     {
       "name": "Yankari Game Reserve",
@@ -67,7 +78,9 @@
       "latitude": 9.8500,
       "longitude": 10.5000,
      "image": "../project/images/card-pic.webp",
-     "period": "December - January"
+     "period": "December - January",
+     "zone": "North"
+     
     }
   ]
   

@@ -12,12 +12,14 @@
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/destination.css">
         <script src="scripts/menu.js" defer></script>
         <script src="scripts/lastVisit.js" defer></script>
-        <script src="scripts/location.js" defer></script>
+        <!-- <script src="scripts/location.js" defer></script> -->
         <!-- <script src="scripts/data.js" defer></script> -->
         <script src="scripts/date.js" defer></script>
-        <script src="scripts/dialog.js" defer></script>
+        <!-- <script src="scripts/dialog.js" defer></script> -->
+        <script src="scripts/destination.js" defer></script>
         <meta property="og:title" content="Nigeria Travel Destination | Oluchukwu Offor">
         <meta property="og:type" content="website">
         <meta property="og:image" content="images/nigeria.jpeg">
@@ -37,13 +39,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html" class="active">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="destination.html">Destination</a>
+                    <a href="destination.html" class="active">Destination</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="Contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -62,23 +64,30 @@
             </picture>
         </div>
         <main>
-            <h1>Home</h1>
+            <h1>Destination</h1>
             <aside class="last-visit"></aside>
-            <form action="">
-                <label for="search">
-                    Search
-                </label>
+            <section class="filters">
+                <label for="search-input">Search Destinations:</label>
                 <input
                     type="text"
+                    id="search-input"
                     name="search"
-                    id="search"
-                    placeholder="Search Destination..."
-                    class="search-destination"
+                    placeholder="Start typing..."
                 >
-            </form>
-            <ul class="filter"></ul>
-            <section class="destination"></section>
-            <dialog class="dialog"></dialog>
+                <label for="region-filter">Filter by Region:</label>
+                <select id="region-filter" name="region">
+                    <option value="All">All Regions</option>
+                    <option value="North">North</option>
+                    <option value="South">South</option>
+                    <option value="East">East</option>
+                    <option value="West">West</option>
+                </select>
+            </section>
+            <section id="destinations-container" class="grid"></section>
+            <dialog id="details-modal">
+                <button id="close-modal">X</button>
+                <div id="modal-content"></div>
+            </dialog>
         </main>
         <footer>
             <p>

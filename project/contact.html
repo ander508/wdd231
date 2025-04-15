@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nigeria Travel Destination | Oluchukwu Offor</title>
-        <meta name="description" content="Nigeria Travel Destination | Oluchukwu Offor">
+        <title>Nigeria Travel Destination | Contact Page | Oluchukwu Offor</title>
+        <meta name="description" content="Nigeria Travel Destination | Contact Page | Oluchukwu Offor">
         <meta name="author" content="Oluchukwu Offor">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +12,11 @@
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/contact.css">
         <script src="scripts/menu.js" defer></script>
         <script src="scripts/lastVisit.js" defer></script>
-        <script src="scripts/location.js" defer></script>
-        <!-- <script src="scripts/data.js" defer></script> -->
         <script src="scripts/date.js" defer></script>
-        <script src="scripts/dialog.js" defer></script>
-        <meta property="og:title" content="Nigeria Travel Destination | Oluchukwu Offor">
+        <meta property="og:title" content="Nigeria Travel Destination | Contact Page | Oluchukwu Offor">
         <meta property="og:type" content="website">
         <meta property="og:image" content="images/nigeria.jpeg">
         <meta property="og:url" content="https://ander508.github.io/wdd231/">
@@ -37,13 +35,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html" class="active">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="destination.html">Destination</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html" class="active">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -62,23 +60,44 @@
             </picture>
         </div>
         <main>
-            <h1>Home</h1>
+            <h1>Contact Us</h1>
             <aside class="last-visit"></aside>
-            <form action="">
-                <label for="search">
-                    Search
-                </label>
+            <form action="thankyou.html" method="get">
+                <label for="name">Name:</label>
+                <br>
                 <input
                     type="text"
-                    name="search"
-                    id="search"
-                    placeholder="Search Destination..."
-                    class="search-destination"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
                 >
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                >
+                <br>
+                <br>
+                <label for="message">Message:</label>
+                <br>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="10"
+                    cols="50"
+                    required
+                ></textarea>
+                <br>
+                <br>
+                <button type="submit">Submit</button>
             </form>
-            <ul class="filter"></ul>
-            <section class="destination"></section>
-            <dialog class="dialog"></dialog>
         </main>
         <footer>
             <p>
