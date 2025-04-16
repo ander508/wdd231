@@ -1,0 +1,86 @@
+export const places = [
+    {
+      "name": "Zuma Rock",
+      "city": "Madalla",
+      "address": "Zuma Rock, Madalla, Niger State",
+      "state": "Niger",
+      "latitude": 9.1233,
+      "longitude": 7.2408,
+      "image": "../project/images/card-pic.webp",
+      "period": "July - August",
+      "zone": "North"
+    },
+    {
+        "name": "Tinapa",
+        "city": "Calabar",
+        "address": "Zuma Rock, Madalla, Niger State",
+        "state": "Niger",
+        "latitude": 9.1233,
+        "longitude": 7.2408,
+        "image": "../project/images/card-pic.webp",
+        "period": "December - January",
+        "zone": "South"
+        
+      },
+    {
+      "name": "Olumo Rock",
+      "city": "Abeokuta",
+      "address": "Olumo Rock, Ikija Road, Abeokuta",
+      "state": "Ogun",
+      "latitude": 7.1561,
+      "longitude": 3.3506,
+      "image": "../project/images/card-pic.webp",
+      "period": "December - January",
+      "zone": "West"
+      
+    },
+    {
+      "name": "Obudu Mountain Resort",
+      "city": "Obudu",
+      "address": "Obudu Plateau, Obanliku Local Government Area",
+      "state": "Cross River",
+      "latitude": 6.3703,
+      "longitude": 9.3763,
+      "image": "../project/images/card-pic.webp",
+      "period": "July - September",
+      "zone": "South"
+      
+    },
+    {
+      "name": "Nike Art Gallery",
+      "city": "Lagos",
+      "address": "2 Elegushi Rd, Lekki Phase I, Lagos",
+      "state": "Lagos",
+      "latitude": 6.4281,
+      "longitude": 3.4317,
+      "image": "../project/images/card-pic.webp",
+      "period": "Novermber - January",
+      "zone": "East"
+      
+    },
+    {
+      "name": "Erin Ijesha Waterfall",
+      "city": "Erin Ijesha",
+      "address": "Olumirin Waterfalls, Erin Ijesha",
+      "state": "Osun",
+      "latitude": 7.5783,
+      "longitude": 4.9244,
+      "image": "../project/images/card-pic.webp",
+      "period": "March - May",
+      "zone": "West"
+      
+    },
+    {
+      "name": "Yankari Game Reserve",
+      "city": "Bauchi",
+      "address": "Yankari National Park, Alkaleri",
+      "state": "Bauchi",
+      "latitude": 9.8500,
+      "longitude": 10.5000,
+     "image": "../project/images/card-pic.webp",
+     "period": "December - January",
+     "zone": "North"
+     
+    }
+  ]
+  

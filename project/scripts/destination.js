@@ -1,19 +1,11 @@
+import { places } from "./destination-data.js";
+console.log(places)
+
 const destinationsContainer = document.querySelector('#destinations-container');
 const regionFilter = document.querySelector('#region-filter');
 const searchInput = document.querySelector('#search-input');
 
-let destinations = [];
 
-async function fetchDestinations() {
-  try {
-    const response = await fetch('../project/data/data.json');
-    destinations = await response.json();
-    displayDestinations(destinations);
-    setupMoreInfoButtons();
-  } catch (error) {
-    console.error('Error fetching destinations:', error);
-  }
-}
 
 function displayDestinations(data) {
   destinationsContainer.innerHTML = '';
@@ -32,11 +24,13 @@ function displayDestinations(data) {
   setupMoreInfoButtons();
 }
 
+displayDestinations(places)
+
 function applyFilters() {
   const selectedZone = regionFilter.value;
   const searchTerm = searchInput.value.toLowerCase();
 
-  let filtered = destinations;
+  let filtered = places;
 
   if (selectedZone !== 'All') {
     filtered = filtered.filter(d => d.zone === selectedZone);
@@ -58,7 +52,7 @@ function setupMoreInfoButtons() {
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
       const name = btn.dataset.name;
-      const destination = destinations.find(d => d.name === name);
+      const destination = places.find(d => d.name === name);
       if (destination) {
         showDetails(destination);
         localStorage.setItem('lastViewed', JSON.stringify(destination));
@@ -84,4 +78,3 @@ function showDetails(dest) {
   });
 }
 
-fetchDestinations();
