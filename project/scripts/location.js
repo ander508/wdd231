@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <div class="card">
                     <div class="card-side-left">
                             <p class="name"><strong>${item.name}</strong></p>
-                            <img src="${item.image}" width="200" height="150" alt="${data.weather[0].description}">
+                            <img src="${item.image}" width="150" height="150" alt="${data.weather[0].description}">
                             <p class="city">${item.city}, ${data.sys.country}</p>
                             <button class="more-info">More Info</button>
                     </div>

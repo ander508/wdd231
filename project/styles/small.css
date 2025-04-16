@@ -151,22 +151,24 @@ label{
 }
 input.search-destination{
     display: block;
-    width: 90%;
+    width: 80%;
     height: 44px;
     margin: auto;
     text-align: center;
     border-radius: 20px;
     font-size: 20px;
+    margin-bottom: 20px;
+    
 }
 
 
 
 .destination .card{
     /* background-color: #cdf2a6; */
-    border: 1px solid#42899f;
-    max-width: 500px;
+    /* border: 1px solid#42899f; */
+    max-width: 400px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 5px;
     padding: 0px;
     box-sizing: border-box;
@@ -182,8 +184,8 @@ input.search-destination{
     text-align: center;
 }
 .destination-img{
-    max-width: 150px;
-    margin: 20px;
+    max-width: 80px;
+    /* margin: 20px; */
 }
 .city{
     margin-top: 10px;
@@ -245,8 +247,9 @@ dialog{
 .index{
     display: flex;
     flex-direction: column;
-    border: 1px solid;
+    /* border: 1px solid; */
     align-items: center;
+    margin: 30px 0;
 }
 .index .destination{
     display: flex;
@@ -254,16 +257,7 @@ dialog{
     width: 100%;
     margin: auto;
     justify-content: space-around;
-    gap: 20px;
-    padding: 30px;
+    gap: 30px;
+    padding: 2px;
     align-items: center;
 }
-/* .destination{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-around;
-    padding: 40px;
-} */
