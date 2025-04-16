@@ -20,10 +20,10 @@ input, select{
     
 }
 #destinations-container{
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    /* width: 80%; */
+    /* margin: auto; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
     gap: 20px;
     align-items: center;
     margin-bottom: 20px;

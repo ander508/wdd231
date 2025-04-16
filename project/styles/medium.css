@@ -36,6 +36,25 @@
         font-weight: bolder;
         
     }
-    
-    
+    .dest-main{
+        width: 80%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    #destinations-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .filters label{
+        width: 50%;
+        
+    }.filters input, .filters select{
+        width: 50%;
+        height: 44px;
+    }
 }
+    
+    

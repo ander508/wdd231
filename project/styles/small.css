@@ -261,3 +261,39 @@ dialog{
     padding: 2px;
     align-items: center;
 }
+
+.dest-main{
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.filters{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid; */
+    
+}
+.filters label{
+    width: 100%;
+    display: block;
+    /* border: 1px solid; */
+    margin-bottom: 2px;
+    text-align: left;
+}.filters input, .filters select{
+    width: 100%;
+    height: 44px;
+}
+
+#destinations-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: space-around;
+    
+}
+.card{
+    width: 400px;
+}
