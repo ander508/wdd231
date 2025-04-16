@@ -7,7 +7,6 @@
 }
 label{
     display: block;
-    /* border: 1px solid; */
     width: 50%;
     text-align: left;
     margin-bottom: -15px;
@@ -45,7 +44,6 @@ p, h3, strong{
     padding: 10px;
 }
 textarea{
-    /* margin-left: -100px; */
     width: 50%;
 }
 button{
@@ -58,11 +56,31 @@ button{
 .data{
     width: 50%;
     margin: auto;
-    /* text-align: center; */
     font-size: 25px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 .data p{
     margin-bottom: 10px;
+}
+main{
+    width: 100%;
+    /* border: 1px solid; */
+    padding: 0;
+    }
+
+form{
+    width: 100%;
+}
+
+@media (min-width:700px){
+    main{
+        width: 60%;
+        margin: auto;
+        /* border: 1px solid; */
+        
+    }
+    form{
+    width: 100%;
+    }
 }
