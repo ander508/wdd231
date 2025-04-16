@@ -30,7 +30,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
-    font-family: "Roboto",;
+    font-family: "Roboto";
 }
 header img{
     max-width: 90px;
